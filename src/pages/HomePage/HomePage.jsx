@@ -1,28 +1,33 @@
-import { Spinner } from 'react-bootstrap';
+import { Spinner, Container, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import React from 'react';
 import './HomePage.css';
 
 function HomePage() {
     return (
-        <>
 
-            <div className="container-background">
+        <div className="container-background">
 
-                <div style={{ width: '250px', height: '250px', margin: 'auto' }}>
-                    <Spinner
-                        animation="border"
-                        role="status"
-                        style={{ width: '250px', height: '250px' }}
-                        className="spinner"
-                    >
-                        <span className="visually-hidden">THE ROW</span>
-                        <h4 className="spinner-text"><strong>THE </strong>ROW</h4>
-                    </Spinner>
-                </div>
-            </div>
 
-        </>
+            <Container>
+
+
+                <Row>
+
+                    <Col md={{ offset: 3, span: 6 }}>
+
+                        <h1>hiiiii</h1>
+                        {/* <Nav.Link as={Link} to="/about">Sobre mí</Nav.Link>
+                               <Nav.Link as={Link} to="/contact">Contacto</Nav.Link>
+
+                    <hr /> */}
+
+
+                    </Col>
+                </Row>
+
+            </Container>
+        </div>
     );
 }
 
